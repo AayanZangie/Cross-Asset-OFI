@@ -1,0 +1,2882 @@
+﻿{
+  "summary": {
+    "bar_seconds": 60,
+    "assets": [
+      "BTC",
+      "ETH",
+      "SOL",
+      "XRP"
+    ],
+    "levels": 10,
+    "train_bars": 3000,
+    "lag_windows": [
+      1,
+      2,
+      3,
+      5,
+      10,
+      20,
+      30
+    ],
+    "aligned": {
+      "aligned_bars_60s": 80640,
+      "first_aligned_utc": "2026-05-02T00:00:00+00:00",
+      "last_aligned_utc": "2026-06-26T23:59:00+00:00"
+    },
+    "elapsed_seconds": 218.64075565338135
+  },
+  "tables": {
+    "coverage": [
+      {
+        "asset": "BTC",
+        "bars_60s": 80640,
+        "first_bar_utc": "2026-05-02T00:00:00+00:00",
+        "last_bar_utc": "2026-06-26T23:59:00+00:00",
+        "mean_spread_bps": 0.014412978058276866,
+        "median_spread_bps": 0.013585334740054082
+      },
+      {
+        "asset": "ETH",
+        "bars_60s": 80640,
+        "first_bar_utc": "2026-05-02T00:00:00+00:00",
+        "last_bar_utc": "2026-06-26T23:59:00+00:00",
+        "mean_spread_bps": 0.052293949219318694,
+        "median_spread_bps": 0.049667160440833635
+      },
+      {
+        "asset": "SOL",
+        "bars_60s": 80640,
+        "first_bar_utc": "2026-05-02T00:00:00+00:00",
+        "last_bar_utc": "2026-06-26T23:59:00+00:00",
+        "mean_spread_bps": 1.2845352087132582,
+        "median_spread_bps": 1.214930309169933
+      },
+      {
+        "asset": "XRP",
+        "bars_60s": 80640,
+        "first_bar_utc": "2026-05-02T00:00:00+00:00",
+        "last_bar_utc": "2026-06-26T23:59:00+00:00",
+        "mean_spread_bps": 0.7911404060444216,
+        "median_spread_bps": 0.755218606759083
+      }
+    ],
+    "pca": [
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-02.npz",
+        "pc1_evr_bar_norm": 0.9302188864137723,
+        "snapshots": 86394,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-03.npz",
+        "pc1_evr_bar_norm": 0.9043989618161737,
+        "snapshots": 86395,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-04.npz",
+        "pc1_evr_bar_norm": 0.928432666576117,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-05.npz",
+        "pc1_evr_bar_norm": 0.9308592251491663,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-06.npz",
+        "pc1_evr_bar_norm": 0.9069862910119464,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-07.npz",
+        "pc1_evr_bar_norm": 0.9491123224966314,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-08.npz",
+        "pc1_evr_bar_norm": 0.8913620473095164,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-09.npz",
+        "pc1_evr_bar_norm": 0.9118525777930437,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-10.npz",
+        "pc1_evr_bar_norm": 0.894361762653555,
+        "snapshots": 86398,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-11.npz",
+        "pc1_evr_bar_norm": 0.9257433150478257,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-12.npz",
+        "pc1_evr_bar_norm": 0.9444986843955375,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-13.npz",
+        "pc1_evr_bar_norm": 0.9590885835753938,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-14.npz",
+        "pc1_evr_bar_norm": 0.932298251328285,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-15.npz",
+        "pc1_evr_bar_norm": 0.9128260551200279,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-16.npz",
+        "pc1_evr_bar_norm": 0.9285262178843782,
+        "snapshots": 86389,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-17.npz",
+        "pc1_evr_bar_norm": 0.9174406692602984,
+        "snapshots": 86395,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-18.npz",
+        "pc1_evr_bar_norm": 0.9210520230273456,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-19.npz",
+        "pc1_evr_bar_norm": 0.9346560647169101,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-20.npz",
+        "pc1_evr_bar_norm": 0.9487155733381692,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-21.npz",
+        "pc1_evr_bar_norm": 0.9295539980035679,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-22.npz",
+        "pc1_evr_bar_norm": 0.9539018254354532,
+        "snapshots": 86399,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-23.npz",
+        "pc1_evr_bar_norm": 0.9669086716890977,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-24.npz",
+        "pc1_evr_bar_norm": 0.966929569833226,
+        "snapshots": 86398,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-25.npz",
+        "pc1_evr_bar_norm": 0.9437503251782909,
+        "snapshots": 86398,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-26.npz",
+        "pc1_evr_bar_norm": 0.8908740214775862,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-27.npz",
+        "pc1_evr_bar_norm": 0.9585733539005599,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-28.npz",
+        "pc1_evr_bar_norm": 0.9239204845880405,
+        "snapshots": 86398,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-29.npz",
+        "pc1_evr_bar_norm": 0.9555522855964358,
+        "snapshots": 86399,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-30.npz",
+        "pc1_evr_bar_norm": 0.9132958842292248,
+        "snapshots": 86340,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-05-31.npz",
+        "pc1_evr_bar_norm": 0.9242136859898967,
+        "snapshots": 86399,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-01.npz",
+        "pc1_evr_bar_norm": 0.926911850257631,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-02.npz",
+        "pc1_evr_bar_norm": 0.9168708805479274,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-03.npz",
+        "pc1_evr_bar_norm": 0.8911764855967448,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-04.npz",
+        "pc1_evr_bar_norm": 0.8883152611443841,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-05.npz",
+        "pc1_evr_bar_norm": 0.8338645232588847,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-06.npz",
+        "pc1_evr_bar_norm": 0.9095657035585354,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-07.npz",
+        "pc1_evr_bar_norm": 0.917957767086448,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-08.npz",
+        "pc1_evr_bar_norm": 0.9081803992083204,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-09.npz",
+        "pc1_evr_bar_norm": 0.902583633256517,
+        "snapshots": 86399,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-10.npz",
+        "pc1_evr_bar_norm": 0.9087537606258214,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-11.npz",
+        "pc1_evr_bar_norm": 0.9130287923098428,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-12.npz",
+        "pc1_evr_bar_norm": 0.930823688446932,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-13.npz",
+        "pc1_evr_bar_norm": 0.9556383585665864,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-14.npz",
+        "pc1_evr_bar_norm": 0.9067127052641449,
+        "snapshots": 86398,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-15.npz",
+        "pc1_evr_bar_norm": 0.9389168890040284,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-16.npz",
+        "pc1_evr_bar_norm": 0.9247836300655337,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-17.npz",
+        "pc1_evr_bar_norm": 0.9531069620449535,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-18.npz",
+        "pc1_evr_bar_norm": 0.925675913655758,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-19.npz",
+        "pc1_evr_bar_norm": 0.9282636960839841,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-20.npz",
+        "pc1_evr_bar_norm": 0.9017088955223899,
+        "snapshots": 86398,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-21.npz",
+        "pc1_evr_bar_norm": 0.8857683979709523,
+        "snapshots": 86399,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-22.npz",
+        "pc1_evr_bar_norm": 0.9058322083873348,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-23.npz",
+        "pc1_evr_bar_norm": 0.8774124139465557,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-24.npz",
+        "pc1_evr_bar_norm": 0.9174734887044185,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-25.npz",
+        "pc1_evr_bar_norm": 0.7731630563660681,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "BTC",
+        "file": "btc_2026-06-26.npz",
+        "pc1_evr_bar_norm": 0.8110479682376966,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-02.npz",
+        "pc1_evr_bar_norm": 0.7940573471701655,
+        "snapshots": 86385,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-03.npz",
+        "pc1_evr_bar_norm": 0.8315384858260018,
+        "snapshots": 86388,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-04.npz",
+        "pc1_evr_bar_norm": 0.8524226202828478,
+        "snapshots": 86397,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-05.npz",
+        "pc1_evr_bar_norm": 0.9206617901864225,
+        "snapshots": 86399,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-06.npz",
+        "pc1_evr_bar_norm": 0.8853078799288815,
+        "snapshots": 86397,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-07.npz",
+        "pc1_evr_bar_norm": 0.8636653037558081,
+        "snapshots": 86399,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-08.npz",
+        "pc1_evr_bar_norm": 0.9225455991278314,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-09.npz",
+        "pc1_evr_bar_norm": 0.8650462545118079,
+        "snapshots": 86354,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-10.npz",
+        "pc1_evr_bar_norm": 0.8975730808461929,
+        "snapshots": 86373,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-11.npz",
+        "pc1_evr_bar_norm": 0.8977799132077039,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-12.npz",
+        "pc1_evr_bar_norm": 0.8910456079199524,
+        "snapshots": 86398,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-13.npz",
+        "pc1_evr_bar_norm": 0.8874312205382717,
+        "snapshots": 86395,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-14.npz",
+        "pc1_evr_bar_norm": 0.8809371260196565,
+        "snapshots": 86397,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-15.npz",
+        "pc1_evr_bar_norm": 0.8763382717686642,
+        "snapshots": 86394,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-16.npz",
+        "pc1_evr_bar_norm": 0.8786804269980449,
+        "snapshots": 86374,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-17.npz",
+        "pc1_evr_bar_norm": 0.9350417722686949,
+        "snapshots": 86390,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-18.npz",
+        "pc1_evr_bar_norm": 0.9010759235600044,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-19.npz",
+        "pc1_evr_bar_norm": 0.9589827784284678,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-20.npz",
+        "pc1_evr_bar_norm": 0.9659492134166294,
+        "snapshots": 86398,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-21.npz",
+        "pc1_evr_bar_norm": 0.9608475938558645,
+        "snapshots": 86399,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-22.npz",
+        "pc1_evr_bar_norm": 0.9449527111797698,
+        "snapshots": 86399,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-23.npz",
+        "pc1_evr_bar_norm": 0.9456187409712055,
+        "snapshots": 86396,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-24.npz",
+        "pc1_evr_bar_norm": 0.9466451686950164,
+        "snapshots": 86383,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-25.npz",
+        "pc1_evr_bar_norm": 0.959470042114966,
+        "snapshots": 86391,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-26.npz",
+        "pc1_evr_bar_norm": 0.94967965775638,
+        "snapshots": 86399,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-27.npz",
+        "pc1_evr_bar_norm": 0.9684749942764983,
+        "snapshots": 86395,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-28.npz",
+        "pc1_evr_bar_norm": 0.9407430290675092,
+        "snapshots": 86398,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-29.npz",
+        "pc1_evr_bar_norm": 0.9279516093705726,
+        "snapshots": 86399,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-30.npz",
+        "pc1_evr_bar_norm": 0.9277189179452877,
+        "snapshots": 86375,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-05-31.npz",
+        "pc1_evr_bar_norm": 0.9339328055587545,
+        "snapshots": 86397,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-01.npz",
+        "pc1_evr_bar_norm": 0.9237909756334083,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-02.npz",
+        "pc1_evr_bar_norm": 0.8704836451826113,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-03.npz",
+        "pc1_evr_bar_norm": 0.8449385634619025,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-04.npz",
+        "pc1_evr_bar_norm": 0.8339177071741991,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-05.npz",
+        "pc1_evr_bar_norm": 0.8270017768822523,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-06.npz",
+        "pc1_evr_bar_norm": 0.8336933869182989,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-07.npz",
+        "pc1_evr_bar_norm": 0.8270341438525566,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-08.npz",
+        "pc1_evr_bar_norm": 0.8247387066717369,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-09.npz",
+        "pc1_evr_bar_norm": 0.7659618420346551,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-10.npz",
+        "pc1_evr_bar_norm": 0.6801070922856143,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-11.npz",
+        "pc1_evr_bar_norm": 0.7537835792868024,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-12.npz",
+        "pc1_evr_bar_norm": 0.797514219400431,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-13.npz",
+        "pc1_evr_bar_norm": 0.7863652985583661,
+        "snapshots": 86398,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-14.npz",
+        "pc1_evr_bar_norm": 0.7628877386309373,
+        "snapshots": 86397,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-15.npz",
+        "pc1_evr_bar_norm": 0.730803468185721,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-16.npz",
+        "pc1_evr_bar_norm": 0.7895195714407246,
+        "snapshots": 86399,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-17.npz",
+        "pc1_evr_bar_norm": 0.7933879508546584,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-18.npz",
+        "pc1_evr_bar_norm": 0.8023278779006812,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-19.npz",
+        "pc1_evr_bar_norm": 0.84395935398009,
+        "snapshots": 86398,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-20.npz",
+        "pc1_evr_bar_norm": 0.837218102734725,
+        "snapshots": 86394,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-21.npz",
+        "pc1_evr_bar_norm": 0.9047414316045073,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-22.npz",
+        "pc1_evr_bar_norm": 0.9277559554991841,
+        "snapshots": 86399,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-23.npz",
+        "pc1_evr_bar_norm": 0.890345414708534,
+        "snapshots": 86399,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-24.npz",
+        "pc1_evr_bar_norm": 0.8655415125870833,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-25.npz",
+        "pc1_evr_bar_norm": 0.8380329932373435,
+        "snapshots": 86400,
+        "bars": 1440
+      },
+      {
+        "asset": "ETH",
+        "file": "eth_2026-06-26.npz",
+        "pc1_evr_bar_norm": 0.789990789322185,
+        "snapshots": 86399,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-02.npz",
+        "pc1_evr_bar_norm": 0.917641856581766,
+        "snapshots": 84519,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-03.npz",
+        "pc1_evr_bar_norm": 0.9292028085030904,
+        "snapshots": 85067,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-04.npz",
+        "pc1_evr_bar_norm": 0.9335733079738928,
+        "snapshots": 85997,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-05.npz",
+        "pc1_evr_bar_norm": 0.9335068607995688,
+        "snapshots": 85883,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-06.npz",
+        "pc1_evr_bar_norm": 0.9447300678434548,
+        "snapshots": 86127,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-07.npz",
+        "pc1_evr_bar_norm": 0.9188590468469754,
+        "snapshots": 86108,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-08.npz",
+        "pc1_evr_bar_norm": 0.9316826906879675,
+        "snapshots": 86189,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-09.npz",
+        "pc1_evr_bar_norm": 0.9354522192388789,
+        "snapshots": 85763,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-10.npz",
+        "pc1_evr_bar_norm": 0.9402807188688055,
+        "snapshots": 85994,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-11.npz",
+        "pc1_evr_bar_norm": 0.9451611636316597,
+        "snapshots": 86310,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-12.npz",
+        "pc1_evr_bar_norm": 0.9539356786350184,
+        "snapshots": 86176,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-13.npz",
+        "pc1_evr_bar_norm": 0.943406293627042,
+        "snapshots": 86260,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-14.npz",
+        "pc1_evr_bar_norm": 0.9443059458281695,
+        "snapshots": 86202,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-15.npz",
+        "pc1_evr_bar_norm": 0.9317654641170413,
+        "snapshots": 86157,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-16.npz",
+        "pc1_evr_bar_norm": 0.9222016950463817,
+        "snapshots": 85742,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-17.npz",
+        "pc1_evr_bar_norm": 0.944180646164631,
+        "snapshots": 85630,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-18.npz",
+        "pc1_evr_bar_norm": 0.9409863136774509,
+        "snapshots": 86213,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-19.npz",
+        "pc1_evr_bar_norm": 0.9456214133186448,
+        "snapshots": 86163,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-20.npz",
+        "pc1_evr_bar_norm": 0.946548671113542,
+        "snapshots": 85994,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-21.npz",
+        "pc1_evr_bar_norm": 0.9344977143078357,
+        "snapshots": 86148,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-22.npz",
+        "pc1_evr_bar_norm": 0.9412158817786237,
+        "snapshots": 86221,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-23.npz",
+        "pc1_evr_bar_norm": 0.9254749828549386,
+        "snapshots": 86174,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-24.npz",
+        "pc1_evr_bar_norm": 0.9303501516627161,
+        "snapshots": 86158,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-25.npz",
+        "pc1_evr_bar_norm": 0.934466762281691,
+        "snapshots": 86143,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-26.npz",
+        "pc1_evr_bar_norm": 0.9362669630770767,
+        "snapshots": 86167,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-27.npz",
+        "pc1_evr_bar_norm": 0.9386046497723167,
+        "snapshots": 86076,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-28.npz",
+        "pc1_evr_bar_norm": 0.9269109272423226,
+        "snapshots": 86096,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-29.npz",
+        "pc1_evr_bar_norm": 0.941223051913421,
+        "snapshots": 86116,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-30.npz",
+        "pc1_evr_bar_norm": 0.9269369503530678,
+        "snapshots": 85622,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-05-31.npz",
+        "pc1_evr_bar_norm": 0.9311151693740626,
+        "snapshots": 85536,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-01.npz",
+        "pc1_evr_bar_norm": 0.9285638802573674,
+        "snapshots": 86228,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-02.npz",
+        "pc1_evr_bar_norm": 0.9415448904018436,
+        "snapshots": 86296,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-03.npz",
+        "pc1_evr_bar_norm": 0.937760668824218,
+        "snapshots": 86315,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-04.npz",
+        "pc1_evr_bar_norm": 0.9376986835571709,
+        "snapshots": 86365,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-05.npz",
+        "pc1_evr_bar_norm": 0.9210795803812134,
+        "snapshots": 86387,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-06.npz",
+        "pc1_evr_bar_norm": 0.9248176668529074,
+        "snapshots": 86224,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-07.npz",
+        "pc1_evr_bar_norm": 0.9463353829953391,
+        "snapshots": 86227,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-08.npz",
+        "pc1_evr_bar_norm": 0.9509389319384605,
+        "snapshots": 86303,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-09.npz",
+        "pc1_evr_bar_norm": 0.9390013142851924,
+        "snapshots": 86289,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-10.npz",
+        "pc1_evr_bar_norm": 0.946555137496503,
+        "snapshots": 86367,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-11.npz",
+        "pc1_evr_bar_norm": 0.947802080205261,
+        "snapshots": 86213,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-12.npz",
+        "pc1_evr_bar_norm": 0.9566869525961967,
+        "snapshots": 86255,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-13.npz",
+        "pc1_evr_bar_norm": 0.9485309812272864,
+        "snapshots": 85545,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-14.npz",
+        "pc1_evr_bar_norm": 0.9596794646325894,
+        "snapshots": 85313,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-15.npz",
+        "pc1_evr_bar_norm": 0.9531360107823906,
+        "snapshots": 86271,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-16.npz",
+        "pc1_evr_bar_norm": 0.967027165543084,
+        "snapshots": 85956,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-17.npz",
+        "pc1_evr_bar_norm": 0.9557762239033434,
+        "snapshots": 86151,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-18.npz",
+        "pc1_evr_bar_norm": 0.959220011613173,
+        "snapshots": 86156,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-19.npz",
+        "pc1_evr_bar_norm": 0.9525179620331065,
+        "snapshots": 85948,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-20.npz",
+        "pc1_evr_bar_norm": 0.9433288733592157,
+        "snapshots": 85747,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-21.npz",
+        "pc1_evr_bar_norm": 0.9101225270709912,
+        "snapshots": 85682,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-22.npz",
+        "pc1_evr_bar_norm": 0.9409414367060175,
+        "snapshots": 86216,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-23.npz",
+        "pc1_evr_bar_norm": 0.9393479662686396,
+        "snapshots": 86130,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-24.npz",
+        "pc1_evr_bar_norm": 0.9457777966938871,
+        "snapshots": 86207,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-25.npz",
+        "pc1_evr_bar_norm": 0.9441243206905343,
+        "snapshots": 86244,
+        "bars": 1440
+      },
+      {
+        "asset": "SOL",
+        "file": "sol_2026-06-26.npz",
+        "pc1_evr_bar_norm": 0.9423529401105168,
+        "snapshots": 86377,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-02.npz",
+        "pc1_evr_bar_norm": 0.9140093079598959,
+        "snapshots": 85657,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-03.npz",
+        "pc1_evr_bar_norm": 0.9289738004906405,
+        "snapshots": 85934,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-04.npz",
+        "pc1_evr_bar_norm": 0.9286596064453997,
+        "snapshots": 86281,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-05.npz",
+        "pc1_evr_bar_norm": 0.9333965022079166,
+        "snapshots": 86221,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-06.npz",
+        "pc1_evr_bar_norm": 0.9184479326547228,
+        "snapshots": 86302,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-07.npz",
+        "pc1_evr_bar_norm": 0.935542925054193,
+        "snapshots": 86220,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-08.npz",
+        "pc1_evr_bar_norm": 0.9089939430371416,
+        "snapshots": 86175,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-09.npz",
+        "pc1_evr_bar_norm": 0.924720395466675,
+        "snapshots": 85455,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-10.npz",
+        "pc1_evr_bar_norm": 0.9331571498280777,
+        "snapshots": 85940,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-11.npz",
+        "pc1_evr_bar_norm": 0.9318971835544658,
+        "snapshots": 86183,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-12.npz",
+        "pc1_evr_bar_norm": 0.9302215716328139,
+        "snapshots": 86318,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-13.npz",
+        "pc1_evr_bar_norm": 0.9206780347482538,
+        "snapshots": 86315,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-14.npz",
+        "pc1_evr_bar_norm": 0.9206624215472997,
+        "snapshots": 86234,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-15.npz",
+        "pc1_evr_bar_norm": 0.9057222165307197,
+        "snapshots": 86238,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-16.npz",
+        "pc1_evr_bar_norm": 0.8937366815481225,
+        "snapshots": 85980,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-17.npz",
+        "pc1_evr_bar_norm": 0.885158547541365,
+        "snapshots": 85884,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-18.npz",
+        "pc1_evr_bar_norm": 0.9122969666843398,
+        "snapshots": 86270,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-19.npz",
+        "pc1_evr_bar_norm": 0.9128063598970005,
+        "snapshots": 86247,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-20.npz",
+        "pc1_evr_bar_norm": 0.907744952668252,
+        "snapshots": 86081,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-21.npz",
+        "pc1_evr_bar_norm": 0.9144248078590604,
+        "snapshots": 86158,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-22.npz",
+        "pc1_evr_bar_norm": 0.9129392299491356,
+        "snapshots": 86259,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-23.npz",
+        "pc1_evr_bar_norm": 0.8862328320831188,
+        "snapshots": 86055,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-24.npz",
+        "pc1_evr_bar_norm": 0.9163639352757649,
+        "snapshots": 85863,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-25.npz",
+        "pc1_evr_bar_norm": 0.9045432595817195,
+        "snapshots": 86034,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-26.npz",
+        "pc1_evr_bar_norm": 0.9108801767812045,
+        "snapshots": 86029,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-27.npz",
+        "pc1_evr_bar_norm": 0.9236330001484392,
+        "snapshots": 86025,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-28.npz",
+        "pc1_evr_bar_norm": 0.9022209328828515,
+        "snapshots": 86155,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-29.npz",
+        "pc1_evr_bar_norm": 0.9017506926393736,
+        "snapshots": 86056,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-30.npz",
+        "pc1_evr_bar_norm": 0.9141386400895073,
+        "snapshots": 85671,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-05-31.npz",
+        "pc1_evr_bar_norm": 0.9062537363404068,
+        "snapshots": 85453,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-01.npz",
+        "pc1_evr_bar_norm": 0.8851989689318649,
+        "snapshots": 86191,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-02.npz",
+        "pc1_evr_bar_norm": 0.8943913427003076,
+        "snapshots": 86307,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-03.npz",
+        "pc1_evr_bar_norm": 0.9335629036083726,
+        "snapshots": 86278,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-04.npz",
+        "pc1_evr_bar_norm": 0.9321912083969466,
+        "snapshots": 86367,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-05.npz",
+        "pc1_evr_bar_norm": 0.9300415024341648,
+        "snapshots": 86387,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-06.npz",
+        "pc1_evr_bar_norm": 0.929584255108712,
+        "snapshots": 86324,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-07.npz",
+        "pc1_evr_bar_norm": 0.9365084482135658,
+        "snapshots": 86276,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-08.npz",
+        "pc1_evr_bar_norm": 0.9276409821799106,
+        "snapshots": 86336,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-09.npz",
+        "pc1_evr_bar_norm": 0.9211665660050716,
+        "snapshots": 86326,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-10.npz",
+        "pc1_evr_bar_norm": 0.926886023333438,
+        "snapshots": 86357,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-11.npz",
+        "pc1_evr_bar_norm": 0.938802567880731,
+        "snapshots": 86206,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-12.npz",
+        "pc1_evr_bar_norm": 0.9364762444073952,
+        "snapshots": 86184,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-13.npz",
+        "pc1_evr_bar_norm": 0.9349632610825467,
+        "snapshots": 85861,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-14.npz",
+        "pc1_evr_bar_norm": 0.9297465266320021,
+        "snapshots": 85497,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-15.npz",
+        "pc1_evr_bar_norm": 0.9313932258559939,
+        "snapshots": 86251,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-16.npz",
+        "pc1_evr_bar_norm": 0.935828435956424,
+        "snapshots": 86324,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-17.npz",
+        "pc1_evr_bar_norm": 0.9307454354431148,
+        "snapshots": 86329,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-18.npz",
+        "pc1_evr_bar_norm": 0.9260645571331227,
+        "snapshots": 86249,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-19.npz",
+        "pc1_evr_bar_norm": 0.9379405030131828,
+        "snapshots": 86240,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-20.npz",
+        "pc1_evr_bar_norm": 0.9311385186211429,
+        "snapshots": 86043,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-21.npz",
+        "pc1_evr_bar_norm": 0.939036757907238,
+        "snapshots": 85868,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-22.npz",
+        "pc1_evr_bar_norm": 0.9361105576523927,
+        "snapshots": 86346,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-23.npz",
+        "pc1_evr_bar_norm": 0.9203013657906025,
+        "snapshots": 86279,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-24.npz",
+        "pc1_evr_bar_norm": 0.9199889262666957,
+        "snapshots": 86263,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-25.npz",
+        "pc1_evr_bar_norm": 0.9310300919563202,
+        "snapshots": 86245,
+        "bars": 1440
+      },
+      {
+        "asset": "XRP",
+        "file": "xrp_2026-06-26.npz",
+        "pc1_evr_bar_norm": 0.9285425388924761,
+        "snapshots": 86330,
+        "bars": 1440
+      }
+    ],
+    "first_day_pca": [
+      {
+        "asset": "BTC",
+        "first_day_raw_pc1_evr": 0.9302188864137723
+      },
+      {
+        "asset": "ETH",
+        "first_day_raw_pc1_evr": 0.7940573471701655
+      },
+      {
+        "asset": "SOL",
+        "first_day_raw_pc1_evr": 0.917641856581766
+      },
+      {
+        "asset": "XRP",
+        "first_day_raw_pc1_evr": 0.9140093079598959
+      }
+    ],
+    "contemporaneous": [
+      {
+        "asset": "BTC",
+        "pi_r2": 0.45112759521245493,
+        "ci_r2": 0.5271126605510819,
+        "ci_minus_pi_r2": 0.07598506533862692,
+        "pi_hit": 0.7889232354456466,
+        "ci_hit": 0.8045723853683668,
+        "ci_minus_pi_hit": 0.015649149922720262,
+        "n": 77640,
+        "scheme": "best",
+        "horizon_bars": 0
+      },
+      {
+        "asset": "ETH",
+        "pi_r2": 0.3846724969525013,
+        "ci_r2": 0.5017586848960274,
+        "ci_minus_pi_r2": 0.1170861879435261,
+        "pi_hit": 0.7840288511076765,
+        "ci_hit": 0.8145672333848532,
+        "ci_minus_pi_hit": 0.030538382277176646,
+        "n": 77640,
+        "scheme": "best",
+        "horizon_bars": 0
+      },
+      {
+        "asset": "SOL",
+        "pi_r2": 0.5389146702800269,
+        "ci_r2": 0.5711218604400095,
+        "ci_minus_pi_r2": 0.032207190159982524,
+        "pi_hit": 0.7947578567748583,
+        "ci_hit": 0.7953374549201443,
+        "ci_minus_pi_hit": 0.0005795981452859644,
+        "n": 77640,
+        "scheme": "best",
+        "horizon_bars": 0
+      },
+      {
+        "asset": "XRP",
+        "pi_r2": 0.493145288394609,
+        "ci_r2": 0.5480420174594519,
+        "ci_minus_pi_r2": 0.054896729064842886,
+        "pi_hit": 0.7758114374034003,
+        "ci_hit": 0.7840546110252448,
+        "ci_minus_pi_hit": 0.008243173621844457,
+        "n": 77640,
+        "scheme": "best",
+        "horizon_bars": 0
+      },
+      {
+        "asset": "BTC",
+        "pi_r2": 0.4618668628010144,
+        "ci_r2": 0.5621668626164062,
+        "ci_minus_pi_r2": 0.10029999981539184,
+        "pi_hit": 0.7917825862957238,
+        "ci_hit": 0.8085780525502319,
+        "ci_minus_pi_hit": 0.016795466254508007,
+        "n": 77640,
+        "scheme": "integrated",
+        "horizon_bars": 0
+      },
+      {
+        "asset": "ETH",
+        "pi_r2": 0.41190607255155975,
+        "ci_r2": 0.5396390433761085,
+        "ci_minus_pi_r2": 0.1277329708245487,
+        "pi_hit": 0.7898377125193199,
+        "ci_hit": 0.8199768160741886,
+        "ci_minus_pi_hit": 0.030139103554868707,
+        "n": 77640,
+        "scheme": "integrated",
+        "horizon_bars": 0
+      },
+      {
+        "asset": "SOL",
+        "pi_r2": 0.6418811655243735,
+        "ci_r2": 0.651192948567535,
+        "ci_minus_pi_r2": 0.009311783043161492,
+        "pi_hit": 0.8145543534260691,
+        "ci_hit": 0.8196032972694487,
+        "ci_minus_pi_hit": 0.005048943843379616,
+        "n": 77640,
+        "scheme": "integrated",
+        "horizon_bars": 0
+      },
+      {
+        "asset": "XRP",
+        "pi_r2": 0.6005502760834229,
+        "ci_r2": 0.6284162505568955,
+        "ci_minus_pi_r2": 0.02786597447347261,
+        "pi_hit": 0.8007856774858321,
+        "ci_hit": 0.8095182895414734,
+        "ci_minus_pi_hit": 0.008732612055641353,
+        "n": 77640,
+        "scheme": "integrated",
+        "horizon_bars": 0
+      }
+    ],
+    "predictive": [
+      {
+        "horizon_bars": 1,
+        "horizon_seconds": 60,
+        "asset": "BTC",
+        "own_r2": -0.0022900115254971265,
+        "cross_r2": 9.610348426414284e-05,
+        "cross_minus_own_r2": 0.0023861150097612693,
+        "own_hit": 0.48906068805566294,
+        "cross_hit": 0.48872567968045355,
+        "cross_minus_own_hit": -0.0003350083752093891,
+        "n": 77610,
+        "alpha": 2.6510296402352676e-05
+      },
+      {
+        "horizon_bars": 1,
+        "horizon_seconds": 60,
+        "asset": "ETH",
+        "own_r2": -0.0027887861226632005,
+        "cross_r2": -9.951541270059039e-05,
+        "cross_minus_own_r2": 0.00268927070996261,
+        "own_hit": 0.49460121118412576,
+        "cross_hit": 0.49217884293261177,
+        "cross_minus_own_hit": -0.0024223682515139844,
+        "n": 77610,
+        "alpha": 4.115131794460505e-05
+      },
+      {
+        "horizon_bars": 1,
+        "horizon_seconds": 60,
+        "asset": "SOL",
+        "own_r2": -0.002605527458891199,
+        "cross_r2": -0.0014713703996129812,
+        "cross_minus_own_r2": 0.001134157059278218,
+        "own_hit": 0.45642314134776446,
+        "cross_hit": 0.4557273547223296,
+        "cross_minus_own_hit": -0.0006957866254348466,
+        "n": 77610,
+        "alpha": 1.0667107193758442e-05
+      },
+      {
+        "horizon_bars": 1,
+        "horizon_seconds": 60,
+        "asset": "XRP",
+        "own_r2": -0.003290238324227035,
+        "cross_r2": -0.0002506624244680289,
+        "cross_minus_own_r2": 0.003039575899759006,
+        "own_hit": 0.463831980414895,
+        "cross_hit": 0.46331658291457284,
+        "cross_minus_own_hit": -0.0005153975003221456,
+        "n": 77610,
+        "alpha": 3.233857327261006e-05
+      },
+      {
+        "horizon_bars": 2,
+        "horizon_seconds": 120,
+        "asset": "BTC",
+        "own_r2": -0.0043921400552995316,
+        "cross_r2": -0.003371249772391227,
+        "cross_minus_own_r2": 0.0010208902829083044,
+        "own_hit": 0.49964565965287533,
+        "cross_hit": 0.5001610637941476,
+        "cross_minus_own_hit": 0.0005154041412722687,
+        "n": 77609,
+        "alpha": 1.1947773604434423e-05
+      },
+      {
+        "horizon_bars": 2,
+        "horizon_seconds": 120,
+        "asset": "ETH",
+        "own_r2": -0.005254013313234163,
+        "cross_r2": -0.00033047670297081666,
+        "cross_minus_own_r2": 0.004923536610263346,
+        "own_hit": 0.5007537785566107,
+        "cross_hit": 0.5035756162300764,
+        "cross_minus_own_hit": 0.002821837673465666,
+        "n": 77609,
+        "alpha": 5.792838652439686e-05
+      },
+      {
+        "horizon_bars": 2,
+        "horizon_seconds": 120,
+        "asset": "SOL",
+        "own_r2": -0.0036542747504983986,
+        "cross_r2": -0.005667608026401538,
+        "cross_minus_own_r2": -0.0020133332759031397,
+        "own_hit": 0.4952776095555928,
+        "cross_hit": 0.49351235037173524,
+        "cross_minus_own_hit": -0.0017652591838575593,
+        "n": 77609,
+        "alpha": 1.1293732168601489e-05
+      },
+      {
+        "horizon_bars": 2,
+        "horizon_seconds": 120,
+        "asset": "XRP",
+        "own_r2": -0.004837162254814009,
+        "cross_r2": -0.006961716725944811,
+        "cross_minus_own_r2": -0.0021245544711308018,
+        "own_hit": 0.4983184939890992,
+        "cross_hit": 0.4951874138308701,
+        "cross_minus_own_hit": -0.003131080158229105,
+        "n": 77609,
+        "alpha": 8.251109616463653e-06
+      },
+      {
+        "horizon_bars": 3,
+        "horizon_seconds": 180,
+        "asset": "BTC",
+        "own_r2": -0.005999819178756249,
+        "cross_r2": -0.00567847401282795,
+        "cross_minus_own_r2": 0.00032134516592829954,
+        "own_hit": 0.500154623234718,
+        "cross_hit": 0.5036336460158747,
+        "cross_minus_own_hit": 0.0034790227811566377,
+        "n": 77608,
+        "alpha": 1.3523593815994133e-05
+      },
+      {
+        "horizon_bars": 3,
+        "horizon_seconds": 180,
+        "asset": "ETH",
+        "own_r2": -0.006892761045935281,
+        "cross_r2": -0.007927994179047548,
+        "cross_minus_own_r2": -0.0010352331331122677,
+        "own_hit": 0.5014173796515823,
+        "cross_hit": 0.5030151530770024,
+        "cross_minus_own_hit": 0.0015977734254201126,
+        "n": 77608,
+        "alpha": 1.300996211307173e-05
+      },
+      {
+        "horizon_bars": 3,
+        "horizon_seconds": 180,
+        "asset": "SOL",
+        "own_r2": -0.004385310551734856,
+        "cross_r2": -0.00910105451306853,
+        "cross_minus_own_r2": -0.004715743961333674,
+        "own_hit": 0.5024353159468096,
+        "cross_hit": 0.4991495722090506,
+        "cross_minus_own_hit": -0.0032857437377589727,
+        "n": 77608,
+        "alpha": 1.2578487575317708e-05
+      },
+      {
+        "horizon_bars": 3,
+        "horizon_seconds": 180,
+        "asset": "XRP",
+        "own_r2": -0.006143609373519876,
+        "cross_r2": -0.01041840859274501,
+        "cross_minus_own_r2": -0.004274799219225134,
+        "own_hit": 0.5027316771466859,
+        "cross_hit": 0.49725543758375423,
+        "cross_minus_own_hit": -0.00547623956293164,
+        "n": 77608,
+        "alpha": 8.712763126739008e-06
+      },
+      {
+        "horizon_bars": 5,
+        "horizon_seconds": 300,
+        "asset": "BTC",
+        "own_r2": -0.008710686429820536,
+        "cross_r2": -0.012584735175341644,
+        "cross_minus_own_r2": -0.003874048745521108,
+        "own_hit": 0.5013916449759039,
+        "cross_hit": 0.5042264773342268,
+        "cross_minus_own_hit": 0.002834832358322825,
+        "n": 77606,
+        "alpha": 1.1528889472547073e-05
+      },
+      {
+        "horizon_bars": 5,
+        "horizon_seconds": 300,
+        "asset": "ETH",
+        "own_r2": -0.009037581736076827,
+        "cross_r2": -0.009584290458764189,
+        "cross_minus_own_r2": -0.0005467087226873613,
+        "own_hit": 0.4990980078859882,
+        "cross_hit": 0.5015333865938201,
+        "cross_minus_own_hit": 0.0024353787078318923,
+        "n": 77606,
+        "alpha": 2.2878579303693557e-05
+      },
+      {
+        "horizon_bars": 5,
+        "horizon_seconds": 300,
+        "asset": "SOL",
+        "own_r2": -0.006000310761843597,
+        "cross_r2": -0.01777264988117655,
+        "cross_minus_own_r2": -0.011772339119332953,
+        "own_hit": 0.5026415483338917,
+        "cross_hit": 0.5005798520732933,
+        "cross_minus_own_hit": -0.002061696260598489,
+        "n": 77606,
+        "alpha": 1.0384673171669521e-05
+      },
+      {
+        "horizon_bars": 5,
+        "horizon_seconds": 300,
+        "asset": "XRP",
+        "own_r2": -0.008335704175980618,
+        "cross_r2": -0.0026245726497449162,
+        "cross_minus_own_r2": 0.005711131526235702,
+        "own_hit": 0.5011983609514729,
+        "cross_hit": 0.5032858284153288,
+        "cross_minus_own_hit": 0.0020874674638559076,
+        "n": 77606,
+        "alpha": 8.762557393164188e-05
+      },
+      {
+        "horizon_bars": 10,
+        "horizon_seconds": 600,
+        "asset": "BTC",
+        "own_r2": -0.012758135303872598,
+        "cross_r2": -0.010351525154492558,
+        "cross_minus_own_r2": 0.0024066101493800396,
+        "own_hit": 0.5051352431025373,
+        "cross_hit": 0.5071326400432984,
+        "cross_minus_own_hit": 0.0019973969407610648,
+        "n": 77601,
+        "alpha": 4.8645748765106774e-05
+      },
+      {
+        "horizon_bars": 10,
+        "horizon_seconds": 600,
+        "asset": "ETH",
+        "own_r2": -0.012236555571849106,
+        "cross_r2": -0.012012288150513362,
+        "cross_minus_own_r2": 0.0002242674213357443,
+        "own_hit": 0.5038337134830737,
+        "cross_hit": 0.4982796613445703,
+        "cross_minus_own_hit": -0.005554052138503407,
+        "n": 77601,
+        "alpha": 6.33180716083654e-05
+      },
+      {
+        "horizon_bars": 10,
+        "horizon_seconds": 600,
+        "asset": "SOL",
+        "own_r2": -0.00709291153954128,
+        "cross_r2": -0.024307756236448652,
+        "cross_minus_own_r2": -0.017214844696907372,
+        "own_hit": 0.5054445174675584,
+        "cross_hit": 0.5020553858842025,
+        "cross_minus_own_hit": -0.0033891315833558533,
+        "n": 77601,
+        "alpha": 2.0786885093467638e-05
+      },
+      {
+        "horizon_bars": 10,
+        "horizon_seconds": 600,
+        "asset": "XRP",
+        "own_r2": -0.011495869206836762,
+        "cross_r2": -0.011920291104461134,
+        "cross_minus_own_r2": -0.0004244218976243719,
+        "own_hit": 0.5007151969691113,
+        "cross_hit": 0.5033182562080386,
+        "cross_minus_own_hit": 0.002603059238927341,
+        "n": 77601,
+        "alpha": 5.630290206888417e-05
+      }
+    ],
+    "portfolio": [
+      {
+        "horizon_bars": 1,
+        "horizon_seconds": 60,
+        "cost_bps": 0.0,
+        "cum_net": 0.2167274205757948,
+        "cum_gross": 0.2167274205757948,
+        "mean_bps": 0.02792699189173311,
+        "hit_rate": 0.4930294531307831,
+        "frac_traded": 0.8299722955995104,
+        "avg_turnover": 0.11600701617002455,
+        "sharpe_annual": 3.0388926145558868,
+        "periods": 77605
+      },
+      {
+        "horizon_bars": 1,
+        "horizon_seconds": 60,
+        "cost_bps": 0.5,
+        "cum_net": -0.23340880391794278,
+        "cum_gross": 0.2167274205757948,
+        "mean_bps": -0.03007651619327914,
+        "hit_rate": 0.4930294531307831,
+        "frac_traded": 0.8299722955995104,
+        "avg_turnover": 0.11600701617002455,
+        "sharpe_annual": -3.2722062727203265,
+        "periods": 77605
+      },
+      {
+        "horizon_bars": 1,
+        "horizon_seconds": 60,
+        "cost_bps": 1.0,
+        "cum_net": -0.6835450284116804,
+        "cum_gross": 0.2167274205757948,
+        "mean_bps": -0.0880800242782914,
+        "hit_rate": 0.4930294531307831,
+        "frac_traded": 0.8299722955995104,
+        "avg_turnover": 0.11600701617002455,
+        "sharpe_annual": -9.572739259571888,
+        "periods": 77605
+      },
+      {
+        "horizon_bars": 2,
+        "horizon_seconds": 120,
+        "cost_bps": 0.0,
+        "cum_net": 0.862761534024149,
+        "cum_gross": 0.862761534024149,
+        "mean_bps": 0.11117487939077225,
+        "hit_rate": 0.5022656245709044,
+        "frac_traded": 0.9908381011288078,
+        "avg_turnover": 0.3768327503518826,
+        "sharpe_annual": 5.7110133405778365,
+        "periods": 77604
+      },
+      {
+        "horizon_bars": 2,
+        "horizon_seconds": 120,
+        "cost_bps": 0.5,
+        "cum_net": -0.5994249038912254,
+        "cum_gross": 0.862761534024149,
+        "mean_bps": -0.07724149578516898,
+        "hit_rate": 0.5022656245709044,
+        "frac_traded": 0.9908381011288078,
+        "avg_turnover": 0.3768327503518826,
+        "sharpe_annual": -3.9663641426167624,
+        "periods": 77604
+      },
+      {
+        "horizon_bars": 2,
+        "horizon_seconds": 120,
+        "cost_bps": 1.0,
+        "cum_net": -2.0616113418066004,
+        "cum_gross": 0.862761534024149,
+        "mean_bps": -0.2656578709611103,
+        "hit_rate": 0.5022656245709044,
+        "frac_traded": 0.9908381011288078,
+        "avg_turnover": 0.3768327503518826,
+        "sharpe_annual": -13.625014845793485,
+        "periods": 77604
+      },
+      {
+        "horizon_bars": 3,
+        "horizon_seconds": 180,
+        "cost_bps": 0.0,
+        "cum_net": 0.8607894526319624,
+        "cum_gross": 0.8607894526319624,
+        "mean_bps": 0.11092218762573126,
+        "hit_rate": 0.5029222703864251,
+        "frac_traded": 0.998389237529477,
+        "avg_turnover": 0.6558702806270642,
+        "sharpe_annual": 3.9365688099982656,
+        "periods": 77603
+      },
+      {
+        "horizon_bars": 3,
+        "horizon_seconds": 180,
+        "cost_bps": 0.5,
+        "cum_net": -1.6840856167431415,
+        "cum_gross": 0.8607894526319624,
+        "mean_bps": -0.21701295268780094,
+        "hit_rate": 0.5029222703864251,
+        "frac_traded": 0.998389237529477,
+        "avg_turnover": 0.6558702806270642,
+        "sharpe_annual": -7.699095631056584,
+        "periods": 77603
+      },
+      {
+        "horizon_bars": 3,
+        "horizon_seconds": 180,
+        "cost_bps": 1.0,
+        "cum_net": -4.228960686118246,
+        "cum_gross": 0.8607894526319624,
+        "mean_bps": -0.5449480930013332,
+        "hit_rate": 0.5029222703864251,
+        "frac_traded": 0.998389237529477,
+        "avg_turnover": 0.6558702806270642,
+        "sharpe_annual": -19.314756940757615,
+        "periods": 77603
+      },
+      {
+        "horizon_bars": 5,
+        "horizon_seconds": 300,
+        "cost_bps": 0.0,
+        "cum_net": 0.48469680819521455,
+        "cum_gross": 0.48469680819521455,
+        "mean_bps": 0.06246012399263083,
+        "hit_rate": 0.502050404835215,
+        "frac_traded": 0.9995360884524684,
+        "avg_turnover": 0.50118297349769,
+        "sharpe_annual": 1.3148874469227838,
+        "periods": 77601
+      },
+      {
+        "horizon_bars": 5,
+        "horizon_seconds": 300,
+        "cost_bps": 0.5,
+        "cum_net": -1.4599181881244974,
+        "cum_gross": 0.48469680819521455,
+        "mean_bps": -0.18813136275621414,
+        "hit_rate": 0.502050404835215,
+        "frac_traded": 0.9995360884524684,
+        "avg_turnover": 0.50118297349769,
+        "sharpe_annual": -3.959510311485421,
+        "periods": 77601
+      },
+      {
+        "horizon_bars": 5,
+        "horizon_seconds": 300,
+        "cost_bps": 1.0,
+        "cum_net": -3.4045331844442095,
+        "cum_gross": 0.48469680819521455,
+        "mean_bps": -0.43872284950505913,
+        "hit_rate": 0.502050404835215,
+        "frac_traded": 0.9995360884524684,
+        "avg_turnover": 0.50118297349769,
+        "sharpe_annual": -9.228429529152193,
+        "periods": 77601
+      },
+      {
+        "horizon_bars": 10,
+        "horizon_seconds": 600,
+        "cost_bps": 0.0,
+        "cum_net": 0.8952651332102481,
+        "cum_gross": 0.8952651332102481,
+        "mean_bps": 0.11537516537066964,
+        "hit_rate": 0.5030222721715557,
+        "frac_traded": 0.9997680292798597,
+        "avg_turnover": 0.3471979977595572,
+        "sharpe_annual": 1.2647573235602485,
+        "periods": 77596
+      },
+      {
+        "horizon_bars": 10,
+        "horizon_seconds": 600,
+        "cost_bps": 0.5,
+        "cum_net": -0.4517936584972817,
+        "cum_gross": 0.8952651332102481,
+        "mean_bps": -0.05822383350910894,
+        "hit_rate": 0.5030222721715557,
+        "frac_traded": 0.9997680292798597,
+        "avg_turnover": 0.3471979977595572,
+        "sharpe_annual": -0.6382161502721079,
+        "periods": 77596
+      },
+      {
+        "horizon_bars": 10,
+        "horizon_seconds": 600,
+        "cost_bps": 1.0,
+        "cum_net": -1.798852450204812,
+        "cum_gross": 0.8952651332102481,
+        "mean_bps": -0.23182283238888757,
+        "hit_rate": 0.5030222721715557,
+        "frac_traded": 0.9997680292798597,
+        "avg_turnover": 0.3471979977595572,
+        "sharpe_annual": -2.540688274269986,
+        "periods": 77596
+      }
+    ],
+    "dm": [
+      {
+        "horizon_bars": 1,
+        "asset": "BTC",
+        "dm_own_minus_cross": 4.440703414712128,
+        "p_value": 8.978887525333269e-06,
+        "mcs_included_10pct": "cross",
+        "mcs_error": null
+      },
+      {
+        "horizon_bars": 1,
+        "asset": "ETH",
+        "dm_own_minus_cross": 4.61980991701009,
+        "p_value": 3.8470764959132e-06,
+        "mcs_included_10pct": "cross",
+        "mcs_error": null
+      },
+      {
+        "horizon_bars": 1,
+        "asset": "SOL",
+        "dm_own_minus_cross": 2.3428767951251763,
+        "p_value": 0.019138212661074,
+        "mcs_included_10pct": "cross",
+        "mcs_error": null
+      },
+      {
+        "horizon_bars": 1,
+        "asset": "XRP",
+        "dm_own_minus_cross": 4.814666672756554,
+        "p_value": 1.4772289710761412e-06,
+        "mcs_included_10pct": "cross",
+        "mcs_error": null
+      },
+      {
+        "horizon_bars": 2,
+        "asset": "BTC",
+        "dm_own_minus_cross": 1.395325946275969,
+        "p_value": 0.1629215637942387,
+        "mcs_included_10pct": "cross,own",
+        "mcs_error": null
+      },
+      {
+        "horizon_bars": 2,
+        "asset": "ETH",
+        "dm_own_minus_cross": 6.155748330143709,
+        "p_value": 7.508825277695807e-10,
+        "mcs_included_10pct": "cross",
+        "mcs_error": null
+      },
+      {
+        "horizon_bars": 2,
+        "asset": "SOL",
+        "dm_own_minus_cross": -2.928122964756697,
+        "p_value": 0.003411142060291721,
+        "mcs_included_10pct": "own",
+        "mcs_error": null
+      },
+      {
+        "horizon_bars": 2,
+        "asset": "XRP",
+        "dm_own_minus_cross": -2.9022386956272026,
+        "p_value": 0.003706103205424493,
+        "mcs_included_10pct": "own",
+        "mcs_error": null
+      },
+      {
+        "horizon_bars": 3,
+        "asset": "BTC",
+        "dm_own_minus_cross": 0.3308620041342099,
+        "p_value": 0.7407496165828946,
+        "mcs_included_10pct": "cross,own",
+        "mcs_error": null
+      },
+      {
+        "horizon_bars": 3,
+        "asset": "ETH",
+        "dm_own_minus_cross": -1.1200502031026796,
+        "p_value": 0.26269583542464164,
+        "mcs_included_10pct": "cross,own",
+        "mcs_error": null
+      },
+      {
+        "horizon_bars": 3,
+        "asset": "SOL",
+        "dm_own_minus_cross": -4.8984329596875,
+        "p_value": 9.67980132684496e-07,
+        "mcs_included_10pct": "own",
+        "mcs_error": null
+      },
+      {
+        "horizon_bars": 3,
+        "asset": "XRP",
+        "dm_own_minus_cross": -4.2818448533304885,
+        "p_value": 1.8557248357523236e-05,
+        "mcs_included_10pct": "own",
+        "mcs_error": null
+      },
+      {
+        "horizon_bars": 5,
+        "asset": "BTC",
+        "dm_own_minus_cross": -2.531141872329913,
+        "p_value": 0.011371142956124961,
+        "mcs_included_10pct": "own",
+        "mcs_error": null
+      },
+      {
+        "horizon_bars": 5,
+        "asset": "ETH",
+        "dm_own_minus_cross": -0.4273748131040112,
+        "p_value": 0.6691075353307028,
+        "mcs_included_10pct": "cross,own",
+        "mcs_error": null
+      },
+      {
+        "horizon_bars": 5,
+        "asset": "SOL",
+        "dm_own_minus_cross": -7.400134552426285,
+        "p_value": 1.374146987331438e-13,
+        "mcs_included_10pct": "own",
+        "mcs_error": null
+      },
+      {
+        "horizon_bars": 5,
+        "asset": "XRP",
+        "dm_own_minus_cross": 4.450027316557565,
+        "p_value": 8.59786545687949e-06,
+        "mcs_included_10pct": "cross",
+        "mcs_error": null
+      },
+      {
+        "horizon_bars": 10,
+        "asset": "BTC",
+        "dm_own_minus_cross": 1.2397005154208263,
+        "p_value": 0.21508993535856688,
+        "mcs_included_10pct": "cross,own",
+        "mcs_error": null
+      },
+      {
+        "horizon_bars": 10,
+        "asset": "ETH",
+        "dm_own_minus_cross": 0.1275224165676549,
+        "p_value": 0.8985272625927208,
+        "mcs_included_10pct": "cross,own",
+        "mcs_error": null
+      },
+      {
+        "horizon_bars": 10,
+        "asset": "SOL",
+        "dm_own_minus_cross": -6.713150971441276,
+        "p_value": 1.9177084292432107e-11,
+        "mcs_included_10pct": "own",
+        "mcs_error": null
+      },
+      {
+        "horizon_bars": 10,
+        "asset": "XRP",
+        "dm_own_minus_cross": -0.21499464483006842,
+        "p_value": 0.8297720587256177,
+        "mcs_included_10pct": "cross,own",
+        "mcs_error": null
+      }
+    ],
+    "matrix": [
+      {
+        "target": "BTC",
+        "source": "BTC",
+        "coef_sum": 6.359673678913848e-07
+      },
+      {
+        "target": "BTC",
+        "source": "ETH",
+        "coef_sum": 1.1032399264320414e-05
+      },
+      {
+        "target": "BTC",
+        "source": "SOL",
+        "coef_sum": -6.669226562125943e-06
+      },
+      {
+        "target": "BTC",
+        "source": "XRP",
+        "coef_sum": 1.5115365798542654e-07
+      },
+      {
+        "target": "ETH",
+        "source": "BTC",
+        "coef_sum": -3.3948837058650175e-07
+      },
+      {
+        "target": "ETH",
+        "source": "ETH",
+        "coef_sum": 3.95177578769347e-06
+      },
+      {
+        "target": "ETH",
+        "source": "SOL",
+        "coef_sum": -4.654603006436677e-06
+      },
+      {
+        "target": "ETH",
+        "source": "XRP",
+        "coef_sum": 1.3573115205738987e-06
+      },
+      {
+        "target": "SOL",
+        "source": "BTC",
+        "coef_sum": 4.8597083762295435e-06
+      },
+      {
+        "target": "SOL",
+        "source": "ETH",
+        "coef_sum": 1.0077106607867725e-05
+      },
+      {
+        "target": "SOL",
+        "source": "SOL",
+        "coef_sum": -3.4351850074995784e-05
+      },
+      {
+        "target": "SOL",
+        "source": "XRP",
+        "coef_sum": 2.4924305760711963e-05
+      },
+      {
+        "target": "XRP",
+        "source": "BTC",
+        "coef_sum": 3.8082428257650554e-06
+      },
+      {
+        "target": "XRP",
+        "source": "ETH",
+        "coef_sum": 9.786770327636732e-06
+      },
+      {
+        "target": "XRP",
+        "source": "SOL",
+        "coef_sum": -3.810798561177712e-06
+      },
+      {
+        "target": "XRP",
+        "source": "XRP",
+        "coef_sum": -9.429670434732698e-06
+      }
+    ],
+    "hub": [
+      {
+        "source": "ETH",
+        "out_strength": 3.089627619982487e-05
+      },
+      {
+        "source": "XRP",
+        "out_strength": 2.6432770939271288e-05
+      },
+      {
+        "source": "SOL",
+        "out_strength": 1.5134628129740332e-05
+      },
+      {
+        "source": "BTC",
+        "out_strength": 9.0074395725811e-06
+      }
+    ],
+    "ablation": [
+      {
+        "target": "BTC",
+        "spec": "own",
+        "r2": -0.0022900115254971265,
+        "hit": 0.48906068805566294,
+        "n": 77610,
+        "r2_minus_own": 0.0
+      },
+      {
+        "target": "BTC",
+        "spec": "own+ETH",
+        "r2": -0.0005040850553976739,
+        "hit": 0.4891251127432032,
+        "n": 77610,
+        "r2_minus_own": 0.0017859264700994526
+      },
+      {
+        "target": "BTC",
+        "spec": "own+SOL",
+        "r2": -0.00040524826052590335,
+        "hit": 0.489331271743332,
+        "n": 77610,
+        "r2_minus_own": 0.0018847632649712232
+      },
+      {
+        "target": "BTC",
+        "spec": "own+XRP",
+        "r2": -0.00017318716281367053,
+        "hit": 0.49005282824378305,
+        "n": 77610,
+        "r2_minus_own": 0.002116824362683456
+      },
+      {
+        "target": "BTC",
+        "spec": "all",
+        "r2": -0.00046395189011261273,
+        "hit": 0.4891508826182193,
+        "n": 77610,
+        "r2_minus_own": 0.0018260596353845138
+      },
+      {
+        "target": "BTC",
+        "spec": "cross_only",
+        "r2": -0.0005681239453358966,
+        "hit": 0.4892153073057596,
+        "n": 77610,
+        "r2_minus_own": 0.0017218875801612299
+      },
+      {
+        "target": "ETH",
+        "spec": "own",
+        "r2": -0.0027887861226632005,
+        "hit": 0.49460121118412576,
+        "n": 77610,
+        "r2_minus_own": 0.0
+      },
+      {
+        "target": "ETH",
+        "spec": "own+BTC",
+        "r2": -0.0007012226048963566,
+        "hit": 0.4930421337456513,
+        "n": 77610,
+        "r2_minus_own": 0.002087563517766844
+      },
+      {
+        "target": "ETH",
+        "spec": "own+SOL",
+        "r2": -0.0008480387044849103,
+        "hit": 0.4923592320577245,
+        "n": 77610,
+        "r2_minus_own": 0.0019407474181782902
+      },
+      {
+        "target": "ETH",
+        "spec": "own+XRP",
+        "r2": -0.00046220386348982956,
+        "hit": 0.49342868187089295,
+        "n": 77610,
+        "r2_minus_own": 0.002326582259173371
+      },
+      {
+        "target": "ETH",
+        "spec": "all",
+        "r2": -0.00042971057857332795,
+        "hit": 0.49188248936992657,
+        "n": 77610,
+        "r2_minus_own": 0.0023590755440898725
+      },
+      {
+        "target": "ETH",
+        "spec": "cross_only",
+        "r2": -0.000381635509848266,
+        "hit": 0.4919597989949749,
+        "n": 77610,
+        "r2_minus_own": 0.0024071506128149345
+      },
+      {
+        "target": "SOL",
+        "spec": "own",
+        "r2": -0.002605527458891199,
+        "hit": 0.45642314134776446,
+        "n": 77610,
+        "r2_minus_own": 0.0
+      },
+      {
+        "target": "SOL",
+        "spec": "own+BTC",
+        "r2": -0.00047443073319497486,
+        "hit": 0.45880685478675426,
+        "n": 77610,
+        "r2_minus_own": 0.0021310967256962243
+      },
+      {
+        "target": "SOL",
+        "spec": "own+ETH",
+        "r2": -0.0005786807048007159,
+        "hit": 0.45830434222394023,
+        "n": 77610,
+        "r2_minus_own": 0.0020268467540904833
+      },
+      {
+        "target": "SOL",
+        "spec": "own+XRP",
+        "r2": -4.484809051508165e-05,
+        "hit": 0.45867800541167375,
+        "n": 77610,
+        "r2_minus_own": 0.0025606793683761175
+      },
+      {
+        "target": "SOL",
+        "spec": "all",
+        "r2": 1.8069531002251615e-05,
+        "hit": 0.458497616286561,
+        "n": 77610,
+        "r2_minus_own": 0.002623596989893451
+      },
+      {
+        "target": "SOL",
+        "spec": "cross_only",
+        "r2": -0.0003955699335569385,
+        "hit": 0.4574023965983765,
+        "n": 77610,
+        "r2_minus_own": 0.0022099575253342607
+      },
+      {
+        "target": "XRP",
+        "spec": "own",
+        "r2": -0.003290238324227035,
+        "hit": 0.463831980414895,
+        "n": 77610,
+        "r2_minus_own": 0.0
+      },
+      {
+        "target": "XRP",
+        "spec": "own+BTC",
+        "r2": -0.0006425353420931312,
+        "hit": 0.46430872310269294,
+        "n": 77610,
+        "r2_minus_own": 0.0026477029821339038
+      },
+      {
+        "target": "XRP",
+        "spec": "own+ETH",
+        "r2": -0.000699649671830116,
+        "hit": 0.4653395181033372,
+        "n": 77610,
+        "r2_minus_own": 0.002590588652396919
+      },
+      {
+        "target": "XRP",
+        "spec": "own+SOL",
+        "r2": -0.0009253269405185005,
+        "hit": 0.4639350599149594,
+        "n": 77610,
+        "r2_minus_own": 0.0023649113837085345
+      },
+      {
+        "target": "XRP",
+        "spec": "all",
+        "r2": -0.0010878847752877618,
+        "hit": 0.4641154490400722,
+        "n": 77610,
+        "r2_minus_own": 0.002202353548939273
+      },
+      {
+        "target": "XRP",
+        "spec": "cross_only",
+        "r2": -0.0010615094122186086,
+        "hit": 0.4641025641025641,
+        "n": 77610,
+        "r2_minus_own": 0.0022287289120084264
+      }
+    ],
+    "extensions": [
+      {
+        "extension": "propagator",
+        "source": "BTC",
+        "target": "ETH",
+        "horizon_bars": 1,
+        "own_r2": -0.0027887861226632005,
+        "free_r2": -0.005908100732710642,
+        "propagator_r2": -0.0031077023589487496,
+        "free_minus_own_r2": -0.003119314610047441,
+        "prop_minus_own_r2": -0.0003189162362855491,
+        "free_hit": 0.49545161705965723,
+        "prop_hit": 0.4973070480608169
+      },
+      {
+        "extension": "propagator",
+        "source": "BTC",
+        "target": "ETH",
+        "horizon_bars": 2,
+        "own_r2": -0.005254013313234163,
+        "free_r2": -0.010049624077351327,
+        "propagator_r2": -0.005830915044934715,
+        "free_minus_own_r2": -0.004795610764117164,
+        "prop_minus_own_r2": -0.000576901731700552,
+        "free_hit": 0.5000064425517659,
+        "prop_hit": 0.5020551740133232
+      },
+      {
+        "extension": "propagator",
+        "source": "BTC",
+        "target": "ETH",
+        "horizon_bars": 5,
+        "own_r2": -0.009037581736076827,
+        "free_r2": -0.016669381128176397,
+        "propagator_r2": -0.009654062333781965,
+        "free_minus_own_r2": -0.00763179939209957,
+        "prop_minus_own_r2": -0.000616480597705138,
+        "free_hit": 0.5012627889596165,
+        "prop_hit": 0.5021518954719996
+      },
+      {
+        "extension": "propagator",
+        "source": "BTC",
+        "target": "SOL",
+        "horizon_bars": 1,
+        "own_r2": -0.002605527458891199,
+        "free_r2": -0.005412666189517301,
+        "propagator_r2": -0.0029499035987010647,
+        "free_minus_own_r2": -0.002807138730626102,
+        "prop_minus_own_r2": -0.0003443761398098655,
+        "free_hit": 0.45675814972297385,
+        "prop_hit": 0.4568998840355624
+      },
+      {
+        "extension": "propagator",
+        "source": "BTC",
+        "target": "SOL",
+        "horizon_bars": 2,
+        "own_r2": -0.0036542747504983986,
+        "free_r2": -0.008223443811642195,
+        "propagator_r2": -0.004282886418630172,
+        "free_minus_own_r2": -0.004569169061143796,
+        "prop_minus_own_r2": -0.0006286116681317733,
+        "free_hit": 0.495728588179206,
+        "prop_hit": 0.49607648597456483
+      },
+      {
+        "extension": "propagator",
+        "source": "BTC",
+        "target": "SOL",
+        "horizon_bars": 5,
+        "own_r2": -0.006000310761843597,
+        "free_r2": -0.014889500072402972,
+        "propagator_r2": -0.007298886830618523,
+        "free_minus_own_r2": -0.008889189310559376,
+        "prop_minus_own_r2": -0.001298576068774926,
+        "free_hit": 0.4995747751462516,
+        "prop_hit": 0.5033244852202149
+      },
+      {
+        "extension": "propagator",
+        "source": "BTC",
+        "target": "XRP",
+        "horizon_bars": 1,
+        "own_r2": -0.003290238324227035,
+        "free_r2": -0.006382379112580994,
+        "propagator_r2": -0.003739254089855981,
+        "free_minus_own_r2": -0.0030921407883539587,
+        "prop_minus_own_r2": -0.0004490157656289462,
+        "free_hit": 0.4634969720396856,
+        "prop_hit": 0.465043164540652
+      },
+      {
+        "extension": "propagator",
+        "source": "BTC",
+        "target": "XRP",
+        "horizon_bars": 2,
+        "own_r2": -0.004837162254814009,
+        "free_r2": -0.009109089417412619,
+        "propagator_r2": -0.005432563769655729,
+        "free_minus_own_r2": -0.00427192716259861,
+        "prop_minus_own_r2": -0.0005954015148417202,
+        "free_hit": 0.49425968637658,
+        "prop_hit": 0.497197489981832
+      },
+      {
+        "extension": "propagator",
+        "source": "BTC",
+        "target": "XRP",
+        "horizon_bars": 5,
+        "own_r2": -0.008335704175980618,
+        "free_r2": -0.015133613994970041,
+        "propagator_r2": -0.008911059006640132,
+        "free_minus_own_r2": -0.006797909818989423,
+        "prop_minus_own_r2": -0.0005753548306595135,
+        "free_hit": 0.49889183825992833,
+        "prop_hit": 0.5006185088781795
+      },
+      {
+        "extension": "propagator",
+        "source": "ETH",
+        "target": "SOL",
+        "horizon_bars": 1,
+        "own_r2": -0.002605527458891199,
+        "free_r2": -0.005126445909337196,
+        "propagator_r2": -0.0031196035097853514,
+        "free_minus_own_r2": -0.002520918450445997,
+        "prop_minus_own_r2": -0.0005140760508941522,
+        "free_hit": 0.45879396984924625,
+        "prop_hit": 0.4566293003478933
+      },
+      {
+        "extension": "propagator",
+        "source": "ETH",
+        "target": "SOL",
+        "horizon_bars": 2,
+        "own_r2": -0.0036542747504983986,
+        "free_r2": -0.008218683815287786,
+        "propagator_r2": -0.004712414032632228,
+        "free_minus_own_r2": -0.004564409064789388,
+        "prop_minus_own_r2": -0.0010581392821338298,
+        "free_hit": 0.49661766032290067,
+        "prop_hit": 0.4951745287273383
+      },
+      {
+        "extension": "propagator",
+        "source": "ETH",
+        "target": "SOL",
+        "horizon_bars": 5,
+        "own_r2": -0.006000310761843597,
+        "free_r2": -0.013038338231397217,
+        "propagator_r2": -0.007872728602507983,
+        "free_minus_own_r2": -0.0070380274695536205,
+        "prop_minus_own_r2": -0.0018724178406643865,
+        "free_hit": 0.5020488106589697,
+        "prop_hit": 0.5029636883746103
+      },
+      {
+        "extension": "propagator",
+        "source": "ETH",
+        "target": "XRP",
+        "horizon_bars": 1,
+        "own_r2": -0.003290238324227035,
+        "free_r2": -0.0062773599719285755,
+        "propagator_r2": -0.0038592671665964584,
+        "free_minus_own_r2": -0.0029871216477015405,
+        "prop_minus_own_r2": -0.0005690288423694234,
+        "free_hit": 0.46434737791521713,
+        "prop_hit": 0.46354851178971784
+      },
+      {
+        "extension": "propagator",
+        "source": "ETH",
+        "target": "XRP",
+        "horizon_bars": 2,
+        "own_r2": -0.004837162254814009,
+        "free_r2": -0.00944741404654259,
+        "propagator_r2": -0.00572305398719597,
+        "free_minus_own_r2": -0.004610251791728581,
+        "prop_minus_own_r2": -0.0008858917323819604,
+        "free_hit": 0.4972103750853638,
+        "prop_hit": 0.49780308984782695
+      },
+      {
+        "extension": "propagator",
+        "source": "ETH",
+        "target": "XRP",
+        "horizon_bars": 5,
+        "own_r2": -0.008335704175980618,
+        "free_r2": -0.015706647818719555,
+        "propagator_r2": -0.009359434878386086,
+        "free_minus_own_r2": -0.007370943642738936,
+        "prop_minus_own_r2": -0.0010237307024054676,
+        "free_hit": 0.49945880473159293,
+        "prop_hit": 0.5007860216993532
+      },
+      {
+        "extension": "xgboost_check",
+        "source": "ALL",
+        "target": "SOL",
+        "horizon_bars": 1,
+        "model": "LASSO",
+        "r2": 1.8069531002251615e-05,
+        "hit": 0.458497616286561,
+        "n": 77610
+      },
+      {
+        "extension": "xgboost_check",
+        "source": "ALL",
+        "target": "SOL",
+        "horizon_bars": 1,
+        "model": "XGBoost",
+        "r2": -0.0566173159540575,
+        "hit": 0.45717046772323156,
+        "n": 77610
+      }
+    ]
+  }
+}

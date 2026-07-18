@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local data caches
+data/historical/
+data/processed/
+data/raw/*.jsonl.gz
+
+# Runtime logs and scratch files
+tmp/
+output/**/*.log
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.agents/
