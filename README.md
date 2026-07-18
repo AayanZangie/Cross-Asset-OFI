@@ -3,7 +3,7 @@
 This repository tests whether cross-asset order-flow imbalance (OFI) predicts
 short-horizon crypto returns across BTC, ETH, SOL and XRP order books.
 
-![Sub-minute decay curve](output/subminute_decay/curve.png)
+![Predictive power versus baselines](output/figures/01_predictive_power_vs_baselines.png)
 
 ## Current Finding
 
@@ -15,6 +15,24 @@ after conservative multiple-comparison correction.
 This is a statistical microstructure result, not a finished trading strategy.
 A trading claim would need a fresh holdout and explicit spread, latency,
 queue-position, fee and market-impact modelling.
+
+## Visual Summary
+
+The headline result is easier to see visually than in the tables alone:
+cross-asset OFI has a clear short-lived edge, and the corrected controls show
+that the clean support is concentrated in the first few seconds.
+
+![Cross-asset OFI edge decay](output/figures/02_cross_edge_decay.png)
+
+![Corrected pass heatmap](output/figures/03_corrected_pass_heatmap.png)
+
+![All-control pass counts](output/figures/04_all_control_pass_counts.png)
+
+The broader robustness battery explains why the slower 300s candidate was not
+accepted as the headline result: it beats own OFI in many cells, but fails the
+cross-return and shifted-placebo controls.
+
+![Robustness pass summary](output/figures/05_robustness_pass_summary.png)
 
 ## What This Demonstrates
 
@@ -85,6 +103,7 @@ python .\scripts\subminute_robustness.py
 python .\scripts\subminute_decay.py
 python .\scripts\plot_subminute_decay.py
 python .\scripts\subminute_temporal_stability.py
+python .\scripts\plot_publication_figures.py
 ```
 
 For a notebook version of the same workflow, open `notebooks/main.ipynb`.
@@ -102,12 +121,17 @@ For a notebook version of the same workflow, open `notebooks/main.ipynb`.
 - `output/robustness_300s/`: 300s placebo and robustness battery.
 - `output/subminute/`: 1s/5s/10s sub-minute result.
 - `output/subminute_decay/`: 1s-30s decay grid, curve and stability check.
+- `output/figures/`: publication-style figures generated from the result CSVs.
 
 ## Main Artifacts
 
 - `report/methodology.md`
 - `report/report.md`
 - `notebooks/main.ipynb`
+- `output/figures/01_predictive_power_vs_baselines.png`
+- `output/figures/02_cross_edge_decay.png`
+- `output/figures/03_corrected_pass_heatmap.png`
+- `output/figures/05_robustness_pass_summary.png`
 - `output/subminute/report.md`
 - `output/subminute_decay/report.md`
 - `output/subminute_decay/curve.png`

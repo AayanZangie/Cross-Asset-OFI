@@ -15,6 +15,20 @@ evidence and still needs a fresh holdout plus explicit spread, latency,
 queue-position, fee and market-impact modelling before it can be framed as an
 executable strategy.
 
+![Predictive power versus baselines](../output/figures/01_predictive_power_vs_baselines.png)
+
+## Visual Read
+
+The main visual pattern is that cross-asset OFI sits above own-OFI and
+return-history baselines at very short bar widths, then loses that clean
+separation. The corrected pass-count visuals show the same conclusion from the
+testing side: all four OFI schemes pass all three controls through 5s, only one
+scheme passes at 6s, and no later bar width is treated as clean support.
+
+![Cross-asset OFI edge decay](../output/figures/02_cross_edge_decay.png)
+
+![Corrected pass heatmap](../output/figures/03_corrected_pass_heatmap.png)
+
 ## Data
 
 - Venue: OKX.
@@ -29,6 +43,8 @@ Raw and processed data are not included in the GitHub repository. Reproduction
 requires downloading the local OKX `.data` files first, placing them under
 `data/historical/`, and then running the notebook's third code cell to verify
 the local data inventory before reconstruction.
+
+![Data and depth diagnostics](../output/figures/07_data_depth_diagnostics.png)
 
 ## What Was Tested
 
@@ -65,6 +81,14 @@ The sub-minute 1s/5s/10s grid is the strongest result:
 The follow-up 1s-30s decay grid shows the effect is clean through 5s. At 6s
 only one scheme passes all three controls, and later widths are mixed or
 structurally hard to evaluate with the exact one-day placebo clock.
+
+![All-control pass counts](../output/figures/04_all_control_pass_counts.png)
+
+The robustness summary also explains why the 300s candidate is not the final
+claim: it beats own OFI in many corrected cells but does not beat cross-return
+history or the shifted placebo controls.
+
+![Robustness pass summary](../output/figures/05_robustness_pass_summary.png)
 
 The temporal-stability check on the already-selected 1s-6s region uses the first
 6 calendar weeks for training and the final 2 weeks for evaluation. All 24

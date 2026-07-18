@@ -68,7 +68,9 @@ The executable reproduction path is:
 The notebook calls the same scripts used to create the committed `output/`
 artifacts. Running it end to end is long because it reconstructs
 the order books, executes discovery grids, performs significance testing and
-generates the final decay graph.
+generates the final decay and publication figures.
+
+![Reproducible research workflow](../output/figures/08_research_workflow.png)
 
 ## 3. Notation
 
@@ -735,19 +737,30 @@ integer bar width from 1s to 30s:
 ```powershell
 python .\scripts\subminute_decay.py
 python .\scripts\plot_subminute_decay.py
+python .\scripts\plot_publication_figures.py
 ```
 
 The decay grid uses the same evaluator as the sub-minute parity grid and
 corrects over 792 comparisons. The graph in
 `output/subminute_decay/curve.png` is generated directly from
 `output/subminute_decay/curve_data.csv`, which is itself produced from the
-decay-grid output. The graph is not hand-drawn and is not a separate analysis.
+decay-grid output. The publication figures in `output/figures/` are generated
+from the same committed CSV artifacts by `scripts/plot_publication_figures.py`.
+They are not hand-drawn and are not a separate analysis.
+
+![Predictive power versus baselines](../output/figures/01_predictive_power_vs_baselines.png)
+
+![Cross-asset OFI edge decay](../output/figures/02_cross_edge_decay.png)
 
 The key result is that all four OFI schemes pass all three corrected controls
 through 5s. At 6s only one scheme passes all three controls. After 6s the effect
 is mixed and is not interpreted as a clean monotone continuation. This supports
 the conclusion that the measured cross-asset OFI signal is a very short-lived
 microstructure effect.
+
+![Corrected pass heatmap](../output/figures/03_corrected_pass_heatmap.png)
+
+![All-control pass counts](../output/figures/04_all_control_pass_counts.png)
 
 ## 21. Temporal-Stability Check
 
@@ -789,6 +802,7 @@ The repository output layout is:
 | `output/robustness_300s/` | `scripts/robustness_300s_ccz.py` | 300s placebo, cross-return and correction battery |
 | `output/subminute/` | `src/tests.py --spec subminute`, `scripts/subminute_robustness.py` | 1s/5s/10s sub-minute result and corrected controls |
 | `output/subminute_decay/` | `scripts/subminute_decay.py`, `scripts/plot_subminute_decay.py`, `scripts/subminute_temporal_stability.py` | 1s-30s decay grid, graph and temporal-stability check |
+| `output/figures/` | `scripts/plot_publication_figures.py` | Publication-style visual summaries generated from committed output CSVs |
 
 The report folder contains only:
 
@@ -799,6 +813,23 @@ The report folder contains only:
 contains the full execution order and the code blocks that regenerate the
 outputs above, assuming the raw data have been downloaded into
 `data/historical/`.
+
+### 22.1 Visual Artifact Manifest
+
+The project includes visual artifacts so the statistical story can be inspected
+without reading every CSV table. The figures are generated from committed output
+files, and their provenance is documented in `output/figures/README.md`.
+
+| Figure | Interpretation |
+|---|---|
+| `output/figures/01_predictive_power_vs_baselines.png` | Cross-asset OFI predictive power is highest at the shortest bars and is compared directly with own-OFI, own-return and cross-return baselines. |
+| `output/figures/02_cross_edge_decay.png` | The cross-OFI R2 improvement over baselines decays after the first few seconds. |
+| `output/figures/03_corrected_pass_heatmap.png` | Each cell shows how many of the three corrected controls pass for one bar width and OFI scheme. |
+| `output/figures/04_all_control_pass_counts.png` | All four OFI schemes pass all controls through 5s; only one scheme passes at 6s; later widths are not treated as clean support. |
+| `output/figures/05_robustness_pass_summary.png` | The 300s candidate is rejected because it fails cross-return and placebo controls, while the sub-minute result survives them. |
+| `output/figures/06_cross_impact_matrix.png` | The 60s coefficient matrix is a descriptive cross-impact diagnostic, not the headline predictive claim. |
+| `output/figures/07_data_depth_diagnostics.png` | Spread and PCA diagnostics summarise the data quality and depth-factor behaviour. |
+| `output/figures/08_research_workflow.png` | The end-to-end workflow from raw OKX files to final interpretation. |
 
 ## 23. Final Interpretation
 
