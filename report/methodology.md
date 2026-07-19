@@ -76,48 +76,48 @@ generates the final decay and publication figures.
 
 Let the asset set be:
 
-$$
+```math
 A = \{\mathrm{BTC}, \mathrm{ETH}, \mathrm{SOL}, \mathrm{XRP}\},
 \qquad N = |A| = 4.
-$$
+```
 
-For asset \(i \in A\), order-book snapshot/update time \(n\), and depth level
-\(m \in \{1,\ldots,M\}\), define:
+For asset $i \in A$, order-book snapshot/update time $n$, and depth level
+$m \in \{1,\ldots,M\}$, define:
 
-$$
+```math
 P^{b}_{i,m,n}, Q^{b}_{i,m,n}
-$$
+```
 
-as the bid price and bid quantity at level \(m\), and:
+as the bid price and bid quantity at level $m$, and:
 
-$$
+```math
 P^{a}_{i,m,n}, Q^{a}_{i,m,n}
-$$
+```
 
-as the ask price and ask quantity at level \(m\). The best bid and best ask are
-level \(m=1\). The mid price and log mid price are:
+as the ask price and ask quantity at level $m$. The best bid and best ask are
+level $m=1$. The mid price and log mid price are:
 
-$$
+```math
 M_{i,n} = \frac{P^{b}_{i,1,n} + P^{a}_{i,1,n}}{2},
 \qquad
 p_{i,n} = \log(M_{i,n}).
-$$
+```
 
-For a bar width \(\Delta\) seconds, bar \(k\) is the half-open interval:
+For a bar width $\Delta$ seconds, bar $k$ is the half-open interval:
 
-$$
+```math
 B_k = [t_k, t_k + \Delta).
-$$
+```
 
 The one-bar return is the log-mid change from one bar to the next. The
-forward-horizon label used by the code is the sum of the next \(h\) bar returns:
+forward-horizon label used by the code is the sum of the next $h$ bar returns:
 
-$$
+```math
 y^{(h)}_{i,k} = \sum_{u=1}^{h} r_{i,k+u}.
-$$
+```
 
-This definition matters because the feature vector at bar \(k\) is never allowed
-to contain future returns from the prediction interval \(k+1,\ldots,k+h\).
+This definition matters because the feature vector at bar $k$ is never allowed
+to contain future returns from the prediction interval $k+1,\ldots,k+h$.
 
 ## 4. Raw Data and Local Storage
 
@@ -173,41 +173,41 @@ OFI converts changes in the limit order book into signed buying or selling
 pressure. Positive OFI means net buying pressure; negative OFI means net selling
 pressure.
 
-For each asset \(i\), level \(m\), and adjacent book states \(n-1\) and \(n\),
+For each asset $i$, level $m$, and adjacent book states $n-1$ and $n$,
 the bid-side contribution is:
 
-$$
+```math
 e^{b}_{i,m,n}
 = Q^{b}_{i,m,n}\mathbf{1}\{P^{b}_{i,m,n} \ge P^{b}_{i,m,n-1}\}
 - Q^{b}_{i,m,n-1}\mathbf{1}\{P^{b}_{i,m,n} \le P^{b}_{i,m,n-1}\}.
-$$
+```
 
 The ask-side contribution is:
 
-$$
+```math
 e^{a}_{i,m,n}
 = Q^{a}_{i,m,n}\mathbf{1}\{P^{a}_{i,m,n} \le P^{a}_{i,m,n-1}\}
 - Q^{a}_{i,m,n-1}\mathbf{1}\{P^{a}_{i,m,n} \ge P^{a}_{i,m,n-1}\}.
-$$
+```
 
-The level-\(m\) OFI increment is:
+The level-$m$ OFI increment is:
 
-$$
+```math
 \mathrm{OFI}_{i,m,n} = e^{b}_{i,m,n} - e^{a}_{i,m,n}.
-$$
+```
 
 This sign convention is economically meaningful. More bid depth or a higher bid
 price is treated as buying pressure. More ask depth or a lower ask price is
 treated as selling pressure. Removing ask liquidity or moving the ask upward is
 therefore positive, because it weakens the sell side.
 
-For a bar \(B_k\), per-level OFI is summed over all snapshot transitions whose
+For a bar $B_k$, per-level OFI is summed over all snapshot transitions whose
 timestamps fall inside the bar:
 
-$$
+```math
 \mathrm{OFI}_{i,m,k}
 = \sum_{n:\tau_{i,n}\in B_k} \mathrm{OFI}_{i,m,n}.
-$$
+```
 
 The bar return is measured from the log mid price. This keeps the target in
 return units rather than price units and makes assets with very different price
@@ -219,9 +219,9 @@ Raw OFI scales mechanically with book depth. A quantity change of 100 units does
 not have the same meaning in a shallow book as in a deep book. The project
 therefore normalises OFI by a depth scalar before comparing assets.
 
-For a bar \(k\) and depth \(M\), define an average top-\(M\) depth scalar:
+For a bar $k$ and depth $M$, define an average top-$M$ depth scalar:
 
-$$
+```math
 D_{i,k}
 = \frac{1}{|B_k|}
 \sum_{n:\tau_{i,n}\in B_k}
@@ -229,13 +229,13 @@ D_{i,k}
 \frac{1}{2M}\sum_{m=1}^{M}
 \left(Q^{b}_{i,m,n}+Q^{a}_{i,m,n}\right)
 \right].
-$$
+```
 
 The normalised level OFI is:
 
-$$
+```math
 X_{i,m,k} = \frac{\mathrm{OFI}_{i,m,k}}{D_{i,k}},
-$$
+```
 
 with invalid or zero-depth bars dropped from the modelling panel. The slower
 CCZ-style path normalises at the bar interval. The sub-minute path normalises at
@@ -246,34 +246,34 @@ Four OFI schemes are evaluated:
 
 1. Best-level OFI:
 
-$$
+```math
 x^{best}_{i,k}=X_{i,1,k}.
-$$
+```
 
 2. Equal-sum OFI:
 
-$$
+```math
 x^{sum}_{i,k}=\sum_{m=1}^{M} X_{i,m,k}.
-$$
+```
 
 3. Distance-weighted OFI:
 
-$$
+```math
 w_m = \frac{1/(1+m-1)}{\sum_{\ell=1}^{M}1/(1+\ell-1)},
 \qquad
 x^{distance}_{i,k}=\sum_{m=1}^{M} w_m X_{i,m,k}.
-$$
+```
 
-4. PCA-integrated OFI. Let \(X_i\) be the matrix of normalised level OFI for
-asset \(i\). After centering columns, the first right singular vector \(v_1\)
+4. PCA-integrated OFI. Let $X_i$ be the matrix of normalised level OFI for
+asset $i$. After centering columns, the first right singular vector $v_1$
 is used as a depth profile. Its sign is chosen so the weight sum is positive,
 and weights are scaled by their absolute sum:
 
-$$
+```math
 w^{pca}_{i}=\frac{v_1}{\sum_{m=1}^{M}|v_{1,m}|},
 \qquad
 x^{pca}_{i,k}=\sum_{m=1}^{M}w^{pca}_{i,m}X_{i,m,k}.
-$$
+```
 
 PCA is included because neighbouring depth levels are highly collinear. Using a
 single integrated factor allows the model to retain multi-level information
@@ -305,88 +305,88 @@ threshold keeps the bar clock mostly regular while still allowing realistic
 high-frequency data irregularity.
 
 The sub-minute placebo requires an exact one-calendar-day shift. For a bar with
-end time \(s_k\), the placebo feature for another asset is taken from
-\(s_k-86400\) seconds. If that timestamp does not exist on the filtered bar
+end time $s_k$, the placebo feature for another asset is taken from
+$s_k-86400$ seconds. If that timestamp does not exist on the filtered bar
 clock, the placebo row is not computable. This is why some non-divisor bar
 widths in the 1s-30s decay grid contain structurally missing placebo cells.
 Those rows are kept in the frozen grid rather than silently removed.
 
 ## 9. Lag Windows and Forecast Labels
 
-Let \(x_{i,k}\) be a scalar OFI feature for asset \(i\) at bar \(k\). For a lag
-window length \(\ell\), the feature used by the code is the trailing sum:
+Let $x_{i,k}$ be a scalar OFI feature for asset $i$ at bar $k$. For a lag
+window length $\ell$, the feature used by the code is the trailing sum:
 
-$$
+```math
 z^{(\ell)}_{i,k}
 = \sum_{u=0}^{\ell-1} x_{i,k-u}.
-$$
+```
 
-For a lag set \(L\), the feature block for asset \(i\) is:
+For a lag set $L$, the feature block for asset $i$ is:
 
-$$
+```math
 Z_{i,k}(L)
 = \left[z^{(\ell_1)}_{i,k}, z^{(\ell_2)}_{i,k}, \ldots,
 z^{(\ell_{|L|})}_{i,k}\right].
-$$
+```
 
 The CCZ lag set is:
 
-$$
+```math
 L_{CCZ}=\{1,2,3,5,10,20,30\}.
-$$
+```
 
 The broad grid also tests smaller lag sets:
 
-- `single`: \(\{1\}\);
-- `low`: \(\{1,2,3\}\);
-- `mid`: \(\{1,2,3,5,10\}\);
-- `ccz`: \(\{1,2,3,5,10,20,30\}\).
+- `single`: $\{1\}$;
+- `low`: $\{1,2,3\}$;
+- `mid`: $\{1,2,3,5,10\}$;
+- `ccz`: $\{1,2,3,5,10,20,30\}$.
 
-The forecast label for horizon \(h\) is:
+The forecast label for horizon $h$ is:
 
-$$
+```math
 y^{(h)}_{i,k}
 = \sum_{u=1}^{h} r_{i,k+u}.
-$$
+```
 
-The label begins at \(k+1\), while the features end at \(k\). This time
+The label begins at $k+1$, while the features end at $k$. This time
 ordering is the basis for the out-of-sample predictive interpretation.
 
 ## 10. Price-Impact and Cross-Impact Models
 
 The own-asset benchmark, called PI or FPI depending on whether the horizon is
-contemporaneous or forward-looking, predicts asset \(i\)'s return using only
-asset \(i\)'s own OFI features:
+contemporaneous or forward-looking, predicts asset $i$'s return using only
+asset $i$'s own OFI features:
 
-$$
+```math
 y^{(h)}_{i,k}
 = \alpha_i + Z_{i,k}(L)\beta_i + \epsilon_{i,k}.
-$$
+```
 
 The cross-impact model, called CI or FCI, predicts the same target using OFI
 features from all assets:
 
-$$
+```math
 y^{(h)}_{i,k}
 = \alpha_i + \sum_{j=1}^{N} Z_{j,k}(L)\gamma_{i,j}
   + \epsilon_{i,k}.
-$$
+```
 
-The coefficient block \(\gamma_{i,j}\) measures how asset \(j\)'s OFI lag
-windows enter asset \(i\)'s return forecast. A directed cross-impact matrix is
+The coefficient block $\gamma_{i,j}$ measures how asset $j$'s OFI lag
+windows enter asset $i$'s return forecast. A directed cross-impact matrix is
 reported by summing each source block:
 
-$$
+```math
 \Lambda_{i,j}=\sum_{\ell\in L}\gamma_{i,j,\ell}.
-$$
+```
 
-Rows of \(\Lambda\) are target assets and columns are source assets. The matrix
+Rows of $\Lambda$ are target assets and columns are source assets. The matrix
 is descriptive rather than causal. It summarises fitted predictive links after
 the chosen controls, but it does not identify an exogenous information shock.
 
 The cross-impact regression is estimated with LASSO on standardised features:
 
-$$
+```math
 \hat{\gamma}_i
 = \arg\min_{\gamma}
 \left[
@@ -394,9 +394,9 @@ $$
 \left(y^{(h)}_{i,k} - \alpha_i - X_k\gamma\right)^2
 + \lambda \|\gamma\|_1
 \right].
-$$
+```
 
-The \(L_1\) penalty is used because the all-asset feature matrix is larger than
+The $L_1$ penalty is used because the all-asset feature matrix is larger than
 the own-only matrix and many cross terms may be redundant. Sparsity makes the
 cross model less likely to win simply because it has more columns.
 
@@ -408,25 +408,25 @@ the order book.
 
 The own-return baseline uses lagged returns of the target asset:
 
-$$
+```math
 y^{(h)}_{i,k}
 = \alpha_i + R_{i,k}(L)\beta_i + \epsilon_{i,k}.
-$$
+```
 
 The cross-return baseline uses return-history features from all assets:
 
-$$
+```math
 y^{(h)}_{i,k}
 = \alpha_i + \sum_{j=1}^{N} R_{j,k}(L)\delta_{i,j}
   + \epsilon_{i,k}.
-$$
+```
 
 The day-shifted placebo keeps the target asset's own OFI aligned but replaces
 other assets' cross-OFI features with features from one calendar day earlier:
 
-$$
+```math
 \tilde{x}_{j,k}=x_{j,k-86400s}, \qquad j \ne i.
-$$
+```
 
 The placebo is designed to preserve broad intraday structure while breaking
 same-time cross-asset information flow. A real cross-OFI model must beat this
@@ -435,18 +435,18 @@ placebo to support the claim that aligned cross-asset order flow matters.
 ## 12. Walk-Forward Estimation
 
 The project uses rolling-origin out-of-sample evaluation. For a training length
-\(W\), step size \(S\), and horizon \(h\), each refit uses a trailing training
-window ending before the test block. A purge of \(h\) bars is applied:
+$W$, step size $S$, and horizon $h$, each refit uses a trailing training
+window ending before the test block. A purge of $h$ bars is applied:
 
-$$
+```math
 \mathcal{T}_q = \{q-W,\ldots,q-h-1\},
 \qquad
 \mathcal{S}_q = \{q,\ldots,q+S-1\}.
-$$
+```
 
 The purge prevents overlapping labels from leaking information from the
-training window into the test window. The model is fit on \(\mathcal{T}_q\) and
-predicts only \(\mathcal{S}_q\). The process repeats until the sample is
+training window into the test window. The model is fit on $\mathcal{T}_q$ and
+predicts only $\mathcal{S}_q$. The process repeats until the sample is
 exhausted, producing an aligned vector of out-of-sample forecasts.
 
 For LASSO models, features are standardised inside each training block and the
@@ -460,55 +460,55 @@ would have been fit before the forecasted observations.
 
 ## 13. Metrics
 
-The main statistical metric is out-of-sample \(R^2\) against a zero-return
+The main statistical metric is out-of-sample $R^2$ against a zero-return
 forecast:
 
-$$
+```math
 R^2_{OOS}
 = 1 - \frac{\sum_{k}(y_k-\hat{y}_k)^2}{\sum_k y_k^2}.
-$$
+```
 
 The zero benchmark is appropriate for high-frequency returns because the
 unconditional mean over a short horizon is close to zero. The project also
 reports directional hit rate:
 
-$$
+```math
 \mathrm{Hit}
 = \frac{1}{n}\sum_k
 \mathbf{1}\{\mathrm{sign}(\hat{y}_k)=\mathrm{sign}(y_k)\}.
-$$
+```
 
 The economic diagnostic uses forecast-implied self-financed weights. A forecast
-\(f_{i,k}\), forecast volatility estimate \(\sigma_{i,k}\), and relative spread
-\(s_{i,k}\) produce a raw position:
+$f_{i,k}$, forecast volatility estimate $\sigma_{i,k}$, and relative spread
+$s_{i,k}$ produce a raw position:
 
-$$
+```math
 u_{i,k}
 = \mathbf{1}\{|f_{i,k}|>s_{i,k}\}
 \frac{f_{i,k}}{\sigma_{i,k}}.
-$$
+```
 
 The normalised weight is:
 
-$$
+```math
 w_{i,k}
 = \frac{u_{i,k}}{\sum_{j=1}^{N}|u_{j,k}|},
-$$
+```
 
 when the denominator is positive, and zero otherwise. Gross PnL is:
 
-$$
+```math
 \mathrm{PnL}^{gross}_k
 = \sum_{i=1}^{N} w_{i,k} r_{i,k+1}.
-$$
+```
 
 Transaction-cost-adjusted PnL subtracts a turnover cost:
 
-$$
+```math
 \mathrm{PnL}^{net}_k
 = \mathrm{PnL}^{gross}_k
 - c\sum_{i=1}^{N}|w_{i,k}-w_{i,k-1}|.
-$$
+```
 
 These portfolio numbers are diagnostics only. They do not include queue
 position, latency, exchange fees, funding, partial fills, market impact or
@@ -518,27 +518,27 @@ statistical microstructure result, not as a finished trading strategy.
 ## 14. Statistical Testing
 
 The Diebold-Mariano (DM) test compares forecast loss series. For two models
-\(a\) and \(b\), with squared-error losses:
+$a$ and $b$, with squared-error losses:
 
-$$
+```math
 L^a_k=(y_k-\hat{y}^a_k)^2,
 \qquad
 L^b_k=(y_k-\hat{y}^b_k)^2,
-$$
+```
 
 the loss differential is:
 
-$$
+```math
 d_k=L^a_k-L^b_k.
-$$
+```
 
 The null hypothesis is:
 
-$$
+```math
 H_0: E[d_k]=0.
-$$
+```
 
-If \(d_k>0\) on average when \(a\) is a baseline and \(b\) is cross OFI, then
+If $d_k>0$ on average when $a$ is a baseline and $b$ is cross OFI, then
 cross OFI has lower squared forecast error. The implementation uses a
 horizon-aware variance estimate so overlapping multi-bar labels do not create
 overconfident p-values.
@@ -555,11 +555,11 @@ sub-minute parity stage corrects over 684 cells. The 1s-30s decay stage corrects
 over 792 cells, which includes the original broad grid plus the pre-declared
 decay extensions. Bonferroni-adjusted p-values are reported as:
 
-$$
+```math
 p^{Bonf}_r = \min(1, m p_r),
-$$
+```
 
-where \(m\) is the number of comparisons in the relevant family. Holm and
+where $m$ is the number of comparisons in the relevant family. Holm and
 Benjamini-Hochberg adjusted p-values are also written to output files, but the
 headline pass/fail tables use Bonferroni as the conservative reference.
 
@@ -694,7 +694,7 @@ The sub-minute design uses:
 - 1s, 5s and 10s bars;
 - an 80% bar coverage rule;
 - one current-bar OFI feature per asset;
-- horizon \(h=1\) bar;
+- horizon $h=1$ bar;
 - fixed UTC train/test boundaries;
 - 7 calendar days train, 1 calendar day test, 7 calendar day step;
 - tuned ridge estimation;
@@ -703,14 +703,14 @@ The sub-minute design uses:
 
 The ridge estimator solves:
 
-$$
+```math
 \hat{\beta}
 = \arg\min_{\beta}
 \left[
 \sum_{k\in\mathcal{T}} (y_k-\alpha-X_k\beta)^2
 + \lambda \sum_{j}\beta_j^2
 \right],
-$$
+```
 
 with the intercept excluded from the penalty. Ridge is used in this path because
 the feature dimension is small and the high-frequency rows are numerous. It
